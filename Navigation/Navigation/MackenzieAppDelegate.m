@@ -7,22 +7,18 @@
 //
 
 #import "MackenzieAppDelegate.h"
-#import "LetraAViewController.h"
+#import "AlphabetView.h"
 
 @implementation MackenzieAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    LetraAViewController *viewController = [[LetraAViewController alloc]
+    AlphabetView *viewController = [[AlphabetView alloc]
                                            initWithNibName:nil
                                            bundle:nil];
-    
-    
-    self.navigationController = [[UINavigationController alloc]
-                                 initWithRootViewController:viewController];
     self.window = [[UIWindow alloc]
                    initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = self.navigationController;
+    self.window.rootViewController = viewController;
 
 
     
