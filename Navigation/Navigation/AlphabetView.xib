@@ -7,8 +7,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlphabetView">
             <connections>
+                <outlet property="figure" destination="hcv-Le-TeW" id="vh0-gD-NyK"/>
                 <outlet property="letter" destination="A2P-qw-Ub0" id="dmM-9f-JLh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="word" destination="p4Q-80-ZFG" id="cNP-2E-FHQ"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -16,18 +18,42 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2P-qw-Ub0">
-                    <rect key="frame" x="260" y="279" width="82" height="41"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2P-qw-Ub0">
+                    <rect key="frame" x="30" y="88" width="123" height="155"/>
+                    <color key="tintColor" red="1" green="0.28938198869999998" blue="0.2615612866" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="123" id="CEs-av-eV6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="130"/>
+                    <color key="textColor" red="1" green="0.2893819886574599" blue="0.26156128660945954" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" red="0.4959556502525253" green="0.14352063235597942" blue="0.12972279798128164" alpha="1" colorSpace="calibratedRGB"/>
+                    <size key="shadowOffset" width="1" height="-2"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4Q-80-ZFG">
+                    <rect key="frame" x="145" y="139" width="115" height="53"/>
+                    <color key="tintColor" red="1" green="0.28938198869999998" blue="0.2615612866" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="44"/>
+                    <color key="textColor" red="1" green="0.59977992740595454" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" red="0.49595565029999999" green="0.14352063239999999" blue="0.129722798" alpha="1" colorSpace="calibratedRGB"/>
+                    <size key="shadowOffset" width="1" height="-2"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hcv-Le-TeW">
+                    <rect key="frame" x="100" y="329" width="160" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="ht2-vZ-cKT"/>
+                        <constraint firstAttribute="height" constant="160" id="jFh-Pj-BcB"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <gestureRecognizers/>
             <constraints>
-                <constraint firstAttribute="centerX" secondItem="A2P-qw-Ub0" secondAttribute="centerX" id="aZn-5H-9am"/>
-                <constraint firstAttribute="centerY" secondItem="A2P-qw-Ub0" secondAttribute="centerY" id="vgs-Gs-dPD"/>
+                <constraint firstItem="A2P-qw-Ub0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="7we-J2-N2c"/>
+                <constraint firstItem="hcv-Le-TeW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="EzT-gJ-2lK"/>
+                <constraint firstItem="p4Q-80-ZFG" firstAttribute="leading" secondItem="A2P-qw-Ub0" secondAttribute="trailing" constant="-8" id="HWw-i7-gti"/>
+                <constraint firstItem="A2P-qw-Ub0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="88" id="XVs-pd-Gr9"/>
+                <constraint firstItem="p4Q-80-ZFG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="139" id="tuh-gg-TuB"/>
+                <constraint firstItem="hcv-Le-TeW" firstAttribute="top" secondItem="A2P-qw-Ub0" secondAttribute="bottom" constant="86" id="y41-Yn-1Ad"/>
             </constraints>
             <connections>
                 <outletCollection property="gestureRecognizers" destination="3du-JD-llM" appends="YES" id="Wd3-Tk-kvl"/>
