@@ -10,9 +10,6 @@
 
 @interface AlphabetView : UIViewController
 
-@property (nonatomic, strong) NSArray *alphabet;
-@property (nonatomic, strong) NSArray *examples;
-@property (nonatomic, strong) NSArray *images;
 @property (strong, nonatomic) IBOutlet UILabel *letter;
 @property (strong, nonatomic) IBOutlet UILabel *word;
 @property (strong, nonatomic) IBOutlet UIImageView *figure;

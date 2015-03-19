@@ -21,6 +21,11 @@
 		27156F7218B76AF50053A99C /* NavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7118B76AF50053A99C /* NavigationTests.m */; };
 		E40A5C841AB70B73002F385F /* AlphabetView.m in Sources */ = {isa = PBXBuildFile; fileRef = E40A5C821AB70B73002F385F /* AlphabetView.m */; };
 		E40A5C851AB70B73002F385F /* AlphabetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E40A5C831AB70B73002F385F /* AlphabetView.xib */; };
+		E490FFD51AB99E78004774E2 /* Dicionario.m in Sources */ = {isa = PBXBuildFile; fileRef = E490FFD41AB99E78004774E2 /* Dicionario.m */; };
+		E490FFDE1AB9A26C004774E2 /* Palavra.m in Sources */ = {isa = PBXBuildFile; fileRef = E490FFDC1AB9A26C004774E2 /* Palavra.m */; };
+		E490FFDF1AB9A26C004774E2 /* Palavra.xib in Resources */ = {isa = PBXBuildFile; fileRef = E490FFDD1AB9A26C004774E2 /* Palavra.xib */; };
+		E490FFE51AB9C83D004774E2 /* Procura.m in Sources */ = {isa = PBXBuildFile; fileRef = E490FFE31AB9C83D004774E2 /* Procura.m */; };
+		E490FFE61AB9C83D004774E2 /* Procura.xib in Resources */ = {isa = PBXBuildFile; fileRef = E490FFE41AB9C83D004774E2 /* Procura.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,14 @@
 		E40A5C811AB70B73002F385F /* AlphabetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphabetView.h; sourceTree = "<group>"; };
 		E40A5C821AB70B73002F385F /* AlphabetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphabetView.m; sourceTree = "<group>"; };
 		E40A5C831AB70B73002F385F /* AlphabetView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlphabetView.xib; sourceTree = "<group>"; };
+		E490FFD31AB99E78004774E2 /* Dicionario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dicionario.h; sourceTree = "<group>"; };
+		E490FFD41AB99E78004774E2 /* Dicionario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dicionario.m; sourceTree = "<group>"; };
+		E490FFDB1AB9A26C004774E2 /* Palavra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Palavra.h; sourceTree = "<group>"; };
+		E490FFDC1AB9A26C004774E2 /* Palavra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Palavra.m; sourceTree = "<group>"; };
+		E490FFDD1AB9A26C004774E2 /* Palavra.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Palavra.xib; sourceTree = "<group>"; };
+		E490FFE21AB9C83D004774E2 /* Procura.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Procura.h; sourceTree = "<group>"; };
+		E490FFE31AB9C83D004774E2 /* Procura.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Procura.m; sourceTree = "<group>"; };
+		E490FFE41AB9C83D004774E2 /* Procura.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Procura.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +132,14 @@
 				E40A5C811AB70B73002F385F /* AlphabetView.h */,
 				E40A5C821AB70B73002F385F /* AlphabetView.m */,
 				E40A5C831AB70B73002F385F /* AlphabetView.xib */,
+				E490FFD31AB99E78004774E2 /* Dicionario.h */,
+				E490FFD41AB99E78004774E2 /* Dicionario.m */,
+				E490FFDB1AB9A26C004774E2 /* Palavra.h */,
+				E490FFDC1AB9A26C004774E2 /* Palavra.m */,
+				E490FFDD1AB9A26C004774E2 /* Palavra.xib */,
+				E490FFE21AB9C83D004774E2 /* Procura.h */,
+				E490FFE31AB9C83D004774E2 /* Procura.m */,
+				E490FFE41AB9C83D004774E2 /* Procura.xib */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -231,6 +252,8 @@
 				27156F5718B76AF50053A99C /* InfoPlist.strings in Resources */,
 				27156F5F18B76AF50053A99C /* Images.xcassets in Resources */,
 				E40A5C851AB70B73002F385F /* AlphabetView.xib in Resources */,
+				E490FFE61AB9C83D004774E2 /* Procura.xib in Resources */,
+				E490FFDF1AB9A26C004774E2 /* Palavra.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,9 +272,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E490FFD51AB99E78004774E2 /* Dicionario.m in Sources */,
 				27156F5D18B76AF50053A99C /* MackenzieAppDelegate.m in Sources */,
 				E40A5C841AB70B73002F385F /* AlphabetView.m in Sources */,
+				E490FFDE1AB9A26C004774E2 /* Palavra.m in Sources */,
 				27156F5918B76AF50053A99C /* main.m in Sources */,
+				E490FFE51AB9C83D004774E2 /* Procura.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

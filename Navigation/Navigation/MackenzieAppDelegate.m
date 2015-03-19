@@ -8,19 +8,32 @@
 
 #import "MackenzieAppDelegate.h"
 #import "AlphabetView.h"
+#import "Procura.h"
 
 @implementation MackenzieAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     AlphabetView *viewController = [[AlphabetView alloc]
-                                           initWithNibName:nil
-                                           bundle:nil];
+                                    initWithNibName:nil
+                                    bundle:nil];
+    Procura *tableview = [[Procura alloc] init];
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = @[viewController, tableview];
+    
+    [[tabBarController.tabBar.items objectAtIndex:0] setTitle:@"Alfabeto"];
+    [[tabBarController.tabBar.items objectAtIndex:1] setTitle:@"Resumo"];
+    
+    [[tabBarController.tabBar.items objectAtIndex:0] setImage:[UIImage imageNamed:@"align_right-25"]];
+    [[tabBarController.tabBar.items objectAtIndex:1] setImage:[UIImage imageNamed:@"alphabetical_sorting_az-25"]];
+    
+    
     self.window = [[UIWindow alloc]
                    initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = viewController;
-
-
+    self.window.rootViewController = tabBarController;
+    
+    
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
