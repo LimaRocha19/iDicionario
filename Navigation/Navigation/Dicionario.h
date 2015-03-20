@@ -7,14 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Realm/Realm.h>
 
 @interface Dicionario : NSObject
 
-@property (nonatomic, strong) NSArray *alphabet;
-@property (nonatomic, strong) NSArray *examples;
-@property (nonatomic, strong) NSArray *images;
+@property (nonatomic, strong) NSMutableArray *alphabet;
+@property (nonatomic, strong) NSMutableArray *examples;
+@property (nonatomic, strong) NSMutableArray *images;
 
 +(Dicionario *)sharedInstance;
+-(void)trocaPalavra:(NSString *)palavra atIndex:(NSInteger)index;
 
 
 @end

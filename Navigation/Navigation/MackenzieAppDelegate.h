@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MackenzieAppDelegate : UIResponder <UIApplicationDelegate>
+@interface MackenzieAppDelegate : UIResponder <UIApplicationDelegate, UIToolbarDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

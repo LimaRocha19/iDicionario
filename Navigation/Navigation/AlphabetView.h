@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AlphabetView : UIViewController
+@interface AlphabetView : UIViewController <UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet UILabel *letter;
 @property (strong, nonatomic) IBOutlet UILabel *word;
@@ -17,5 +17,6 @@
 
 - (IBAction)next:(id)sender;
 - (IBAction)previous:(id)sender;
+- (void)trocandoPalavra;
 
 @end
