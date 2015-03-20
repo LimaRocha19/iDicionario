@@ -48,12 +48,24 @@
     go.tintColor = [UIColor grayColor];
     toolBar.items = @[search,go];
     
+    [figure setUserInteractionEnabled:YES];
+    
     letter.text = [dicionario.alphabet objectAtIndex:contador];
     word.text = [dicionario.examples objectAtIndex:contador];
     figure.image = [dicionario.images objectAtIndex:contador];
     
     [super viewDidLoad];
     
+}
+
+-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    UITouch  *toque = [touches anyObject];
+    
+    if(toque.view == figure) {
+        CGPoint location = [toque locationInView:self.view];
+        figure.center = location;
+    }
 }
 
 - (void)trocandoPalavra {
@@ -77,6 +89,7 @@
 
 - (IBAction)next:(id)sender {
     contador++;
+    
 
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDuration:0.75];
@@ -98,6 +111,7 @@
 
 - (IBAction)previous:(id)sender {
     contador--;
+    
     
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDuration:0.75];
